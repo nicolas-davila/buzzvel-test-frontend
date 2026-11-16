@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <footer>
             <div>
-                <a href="#">Luma. Slogan</a>
+                <a href="#">Luma.</a>
                 <p>Practical learning for curious people.</p>
             </div>
             <nav aria-label="Footer">
