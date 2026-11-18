@@ -3,7 +3,8 @@
 @theme {
   --color-background: #F9F8F3;
   --color-primary: #3157F6;
-  --color-foreground: #171717;
+  --color-foreground: #171B2C;
+  --color-line: #DBDFEB;
 }
 
 @theme inline {
