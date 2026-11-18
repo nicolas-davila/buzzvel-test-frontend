@@ -7,6 +7,7 @@
   --color-line: #DBDFEB;
   --color-muted: #656770;
   --color-accent: #FFCB9F;
+  --color-accent-soft: #E2E8FF;
 }
 
 @theme inline {

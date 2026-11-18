@@ -2,6 +2,8 @@ import { avatars } from "@/data/hero"
 import Image from "next/image"
 import Container from "./Container"
 import Button from "./Button"
+import Badge from "./Badge"
+import Tag from "./Tag"
 
 export default function Hero() {
     return (
@@ -39,6 +41,7 @@ export default function Hero() {
                 <div className="relative aspect-[500/520]">
                     <div className="absolute top-6 right-[-39px] h-[468px] w-[89px] rounded-2xl bg-accent" aria-hidden="true">
                     </div>
+                    <div className="absolute top-[403px] -left-[45px] size-[106px] rounded-full bg-accent-soft" aria-hidden="true"></div>
                     <Image
                         src="/hero.jpg"
                         alt="Smiling woman with glasses working on a laptop"
@@ -47,6 +50,20 @@ export default function Hero() {
                         className="rounded-3xl object-cover"
                         preload
                     />
+                    <Badge className="absolute top-4 -left-[22px] flex items-center gap-3">
+                        <Tag>120+</Tag>
+                        <span className="text-sm leading-6 text-foreground">expert-led courses</span>
+                    </Badge>
+                    <Badge className="absolute -right-[57px] bottom-[35px] flex items-center gap-2">
+                        <span className="flex gap-0.5" aria-hidden="true">
+                            {Array.from({ length: 5 }).map((_, index) => (
+                                <svg key={index} viewBox="0 0 24 24" className="size-3.5 fill-current text-yellow-400 p-0.5" aria-hidden="true">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                </svg>
+                            ))}
+                        </span>
+                        <span className="text-sm leading-6 text-foreground">4.9 avg rating</span>
+                    </Badge>
                 </div>
             </Container>
         </section>
