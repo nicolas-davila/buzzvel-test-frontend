@@ -5,6 +5,7 @@
   --color-primary: #3157F6;
   --color-foreground: #171B2C;
   --color-line: #DBDFEB;
+  --color-muted: #656770;
 }
 
 @theme inline {

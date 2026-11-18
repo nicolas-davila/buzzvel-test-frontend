@@ -2,20 +2,26 @@ import type { ReactNode } from "react";
 
 type ButtonProps = {
     variant: "primary" | "secondary";
+    size?: "sm" | "md";
     children: ReactNode;
     href?: string; 
 };
 
-const baseClasses = "inline-block rounded-lg px-7 py-3.5 text-center text-sm leading-6 font-bold";
+const baseClasses = "inline-block rounded-lg text-center text-sm leading-6 font-bold";
 
 const variantClasses = {
     primary: "bg-primary text-white",
     secondary: "bg-white text-foreground border border-line",
 };
 
-export default function Button( {variant, children, href}: ButtonProps) {
+const sizeClasses = {
+    sm: "px-5 py-2.5",
+    md: "px-7 py-3.5",
+};
+
+export default function Button( {variant, size="md", children, href}: ButtonProps) {
     return (
-        <a href={href} className={`${baseClasses} ${variantClasses[variant]}`}>
+        <a href={href} className={`${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]}`}>
             {children}
         </a>
     );
