@@ -37,14 +37,16 @@ export default function Hero() {
                     </div>
                 </div>
                 <div className="relative aspect-[500/520]">
-                            <Image 
-                                src="/hero.jpg"
-                                alt="Smiling woman with glasses working on a laptop"
-                                fill
-                                sizes="(min-width: 1024px) 500px, 100vw"
-                                className="rounded-3xl object-cover"
-                                preload
-                            />
+                    <div className="absolute top-6 right-[-39px] h-[468px] w-[89px] rounded-2xl bg-accent" aria-hidden="true">
+                    </div>
+                    <Image
+                        src="/hero.jpg"
+                        alt="Smiling woman with glasses working on a laptop"
+                        fill
+                        sizes="(min-width: 1024px) 500px, 100vw"
+                        className="rounded-3xl object-cover"
+                        preload
+                    />
                 </div>
             </Container>
         </section>

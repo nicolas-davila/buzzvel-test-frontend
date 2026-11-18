@@ -6,6 +6,7 @@
   --color-foreground: #171B2C;
   --color-line: #DBDFEB;
   --color-muted: #656770;
+  --color-accent: #FFCB9F;
 }
 
 @theme inline {
