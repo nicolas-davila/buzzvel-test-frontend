@@ -1,29 +1,53 @@
+import Image from "next/image";
+import Link from "next/link";
 import { footerColumns } from "@/data/footer";
+import Container from "./Container";
 
 export default function Footer() {
     return (
-        <footer>
-            <div>
-                <a href="#">Luma.</a>
-                <p>Practical learning for curious people.</p>
-            </div>
-            <nav aria-label="Footer">
-                {footerColumns.map((footerColumn) =>
-                        <div key={footerColumn.title}>
-                            <h3>{footerColumn.title}</h3>
-                            <ul>
-                                {footerColumn.links.map((link) =>
-                                        <li key={link.label}>
-                                            <a href={link.href}>{link.label}</a>
-                                        </li>
-                                    )
-                                }
+        <footer className="bg-foreground pt-16 pb-10 text-white md:pt-20">
+            <Container>
+                <div className="grid gap-10 md:grid-cols-3 lg:grid-cols-[446px_240px_240px_1fr]">
+                    <div className="md:col-span-3 lg:col-span-1">
+                        <Link href="/" aria-label="Luma home">
+                            <Image
+                                src="/luma.svg"
+                                alt="Luma"
+                                width={54}
+                                height={17}
+                                className="brightness-0 invert"
+                            />
+                        </Link>
+                        <p className="mt-3 max-w-[220px] text-sm leading-6 text-white/60">
+                            Practical learning for curious people.
+                        </p>
+                    </div>
+
+                    {footerColumns.map((footerColumn) => (
+                        <nav key={footerColumn.title} aria-label={footerColumn.title}>
+                            <h3 className="text-xs leading-4 font-semibold uppercase tracking-[0.12em]">
+                                {footerColumn.title}
+                            </h3>
+                            <ul className="mt-5 flex flex-col gap-3">
+                                {footerColumn.links.map((link) => (
+                                    <li key={link.label}>
+                                        <a
+                                            href={link.href}
+                                            className="text-sm leading-6 text-white/60 transition-colors hover:text-white motion-reduce:transition-none"
+                                        >
+                                            {link.label}
+                                        </a>
+                                    </li>
+                                ))}
                             </ul>
-                        </div>
-                    )
-                }
-            </nav>
-            <p>© 2026 Luma Learning</p>
+                        </nav>
+                    ))}
+                </div>
+
+                <p className="mt-16 border-t border-white/15 pt-8 text-xs leading-4 text-white/60">
+                    © 2026 Luma Learning
+                </p>
+            </Container>
         </footer>
     );
 }
