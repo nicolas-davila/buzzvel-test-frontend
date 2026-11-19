@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 
 type ButtonProps = {
-    variant: "primary" | "secondary";
+    variant: "primary" | "secondary" | "accent";
     size?: "sm" | "md";
     children: ReactNode;
     href?: string; 
@@ -12,6 +12,7 @@ const baseClasses = "inline-block rounded-lg text-center text-sm leading-6 font-
 const variantClasses = {
     primary: "bg-primary text-white hover:bg-primary/90",
     secondary: "bg-white text-foreground border border-line hover:bg-background",
+    accent: "bg-highlight text-foreground hover:bg-highlight/90",
 };
 
 const sizeClasses = {
