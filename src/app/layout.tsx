@@ -15,8 +15,15 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Luma.",
-  description: "Website FrontEnd",
+  title: "Luma. | Build skills that actually move you forward",
+  description:
+    "Luma is an online learning platform with practical courses taught by people who do the work every day. Learn design, technology, business and more.",
+  openGraph: {
+    title: "Luma. | Build skills that actually move you forward",
+    description:
+      "Practical courses taught by people who do the work every day.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
