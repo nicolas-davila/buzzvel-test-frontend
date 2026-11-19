@@ -64,7 +64,7 @@ Page order: Header → Hero → Categories → FeaturedCourse → HowItWorks →
 
 ## Time spent
 
-Worked from 16 to 19 November 2026 (first commit on 16/11, last on 19/11). Approximate total: **[XX] hours**, roughly: setup, tokens and Header/Footer; Hero and Categories; the remaining sections; mobile and responsive review; README and final checks.
+Worked from 16 to 19 November 2026 (first commit on 16/11, last on 19/11). Approximate total: **22 hours**, roughly: setup, tokens and Header/Footer; Hero and Categories; the remaining sections; mobile and responsive review; README and final checks.
 
 ## AI tools used
 
