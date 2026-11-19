@@ -9,6 +9,7 @@
   --color-accent: #FFCB9F;
   --color-accent-soft: #E2E8FF;
   --color-highlight: #FFEE7E;
+  --color-subtle: #6D7384;
 }
 
 @theme inline {
