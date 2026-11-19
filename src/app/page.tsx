@@ -4,6 +4,7 @@ import FeaturedCourse from "@/components/FeaturedCourse";
 import HowItWorks from "@/components/HowItWorks";
 import Testimonial from "@/components/Testimonial";
 import People from "@/components/People";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <HowItWorks />
         <Testimonial />
         <People />
+        <Contact />
     </main>
   );
 }
