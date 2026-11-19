@@ -73,5 +73,3 @@ I used **Claude Code (Anthropic, Claude Sonnet 5.5)** during the whole test.
 - **As a tutor:** it explained React, TypeScript, Next.js and Tailwind concepts, helped me read error messages and review my code, and converted the measures I read from the Figma panels into Tailwind classes. I wrote and committed this part myself: design tokens, `Container`, `Button`, `Header`, `Hero`, `Tag`, `Badge` and the navigation, footer and hero data files.
 - **As a code writer (from 19/11, because of the deadline):** it wrote the remaining sections and pieces in small parts that I reviewed and committed: metadata, focus and reduced-motion styles, `SectionHeading`, Categories, FeaturedCourse, HowItWorks, Testimonial, People, Contact (with the validated form), FinalCTA, the footer styling, the mobile menu and the responsive changes to Hero and Testimonial. The Figma is private, so it worked from my screenshots of the design panels.
 - It also checked the project with `tsc`, ESLint and `next build`, and helped write this README.
-
-I reviewed the code and can explain it.
