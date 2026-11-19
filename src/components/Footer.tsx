@@ -7,8 +7,8 @@ export default function Footer() {
     return (
         <footer className="bg-foreground pt-16 pb-10 text-white md:pt-20">
             <Container>
-                <div className="grid gap-10 md:grid-cols-3 lg:grid-cols-[446px_240px_240px_1fr]">
-                    <div className="md:col-span-3 lg:col-span-1">
+                <div className="grid grid-cols-2 gap-x-6 gap-y-8 md:grid-cols-3 md:gap-10 lg:grid-cols-[446px_240px_240px_1fr]">
+                    <div className="col-span-2 md:col-span-3 lg:col-span-1">
                         <Link href="/" aria-label="Luma home">
                             <Image
                                 src="/luma.svg"
@@ -44,7 +44,7 @@ export default function Footer() {
                     ))}
                 </div>
 
-                <p className="mt-16 border-t border-white/15 pt-8 text-xs leading-4 text-white/60">
+                <p className="mt-12 border-t border-white/15 pt-8 text-center text-xs leading-4 text-white/60 md:mt-16 md:text-left">
                     © 2026 Luma Learning
                 </p>
             </Container>
