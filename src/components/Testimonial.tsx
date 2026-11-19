@@ -33,13 +33,13 @@ export default function Testimonial() {
                     </figcaption>
                 </figure>
 
-                <ul className="flex flex-col gap-5 lg:w-[401px] lg:border-l lg:border-line lg:pl-12">
+                <ul className="grid grid-cols-3 gap-4 md:gap-8 lg:flex lg:w-[401px] lg:flex-col lg:gap-5 lg:border-l lg:border-line lg:pl-12">
                     {stats.map((stat) => (
                         <li key={stat.label}>
-                            <p className="font-heading text-[40px] leading-[48px] font-extrabold tracking-tight text-primary md:text-[64px] md:leading-[70px]">
+                            <p className="font-heading text-[28px] leading-8 font-extrabold tracking-tight text-primary sm:text-[40px] sm:leading-[48px] md:text-[56px] md:leading-[64px] lg:text-[64px] lg:leading-[70px]">
                                 {stat.value}
                             </p>
-                            <p className="text-sm leading-6 text-subtle">{stat.label}</p>
+                            <p className="text-xs leading-4 text-subtle sm:text-sm sm:leading-6">{stat.label}</p>
                         </li>
                     ))}
                 </ul>
