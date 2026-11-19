@@ -2,11 +2,19 @@ import type { ReactNode } from "react";
 
 type TagProps = {
     children: ReactNode;
+    size?: "sm" | "md";
 };
 
-export default function Tag({ children }: TagProps) {
+const baseClasses = "inline-flex items-center bg-accent-soft font-bold text-primary";
+
+const sizeClasses = {
+    sm: "h-6 rounded-md px-2 text-xs leading-4",
+    md: "h-8 rounded-lg px-1 text-sm leading-6",
+};
+
+export default function Tag({ children, size = "md" }: TagProps) {
     return (
-        <span className="inline-flex h-8 items-center rounded-lg bg-accent-soft px-1 text-sm leading-6 font-bold text-primary">
+        <span className={`${baseClasses} ${sizeClasses[size]}`}>
             {children}
         </span>
     );
