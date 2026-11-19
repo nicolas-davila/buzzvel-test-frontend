@@ -2,11 +2,17 @@ type SectionHeadingProps = {
     eyebrow: string;
     title: string;
     description?: string;
+    align?: "left" | "center";
 };
 
-export default function SectionHeading({ eyebrow, title, description }: SectionHeadingProps) {
+const alignClasses = {
+    left: "max-w-[560px]",
+    center: "mx-auto text-center",
+};
+
+export default function SectionHeading({ eyebrow, title, description, align = "left" }: SectionHeadingProps) {
     return (
-        <div className="max-w-[560px]">
+        <div className={alignClasses[align]}>
             <p className="text-xs font-semibold uppercase tracking-[0.12em] text-primary">
                 {eyebrow}
             </p>
