@@ -5,6 +5,7 @@ import HowItWorks from "@/components/HowItWorks";
 import Testimonial from "@/components/Testimonial";
 import People from "@/components/People";
 import Contact from "@/components/Contact";
+import FinalCTA from "@/components/FinalCTA";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Testimonial />
         <People />
         <Contact />
+        <FinalCTA />
     </main>
   );
 }
