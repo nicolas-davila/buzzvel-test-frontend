@@ -123,7 +123,7 @@ export default function ContactForm() {
 
                 <button
                     type="submit"
-                    className="w-full rounded-lg bg-primary px-7 py-3.5 text-center text-sm leading-6 font-bold text-white transition-colors duration-200 hover:bg-primary/90 motion-reduce:transition-none"
+                    className="w-full rounded-lg bg-primary px-7 py-3.5 text-center text-sm leading-6 font-bold text-white transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-primary/90 hover:shadow-md active:translate-y-0 active:shadow-none motion-reduce:transition-none motion-reduce:hover:translate-y-0"
                 >
                     Send message
                 </button>

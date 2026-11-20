@@ -37,7 +37,7 @@ export default function People() {
                                             alt={photo.alt}
                                             width={photo.width}
                                             height={photo.height}
-                                            className="rounded-sm object-cover shadow-[0_0_3px_rgba(0,0,0,0.07),0_3px_5px_-1px_rgba(0,0,0,0.1)]"
+                                            className="rounded-sm object-cover transition-transform duration-300 hover:scale-105 motion-reduce:transition-none motion-reduce:hover:scale-100 shadow-[0_0_3px_rgba(0,0,0,0.07),0_3px_5px_-1px_rgba(0,0,0,0.1)]"
                                             style={{ width: photo.width, height: photo.height }}
                                         />
                                     ))}

@@ -11,7 +11,7 @@ export default function CategoryCard({ number, title, description, href }: Categ
     return (
         <a
             href={href}
-            className="group flex min-h-[260px] w-full flex-col justify-between rounded-2xl border border-line bg-white p-7 transition-colors hover:border-primary motion-reduce:transition-none"
+            className="group flex min-h-[260px] w-full flex-col justify-between rounded-2xl border border-line bg-white p-7 transition duration-200 hover:-translate-y-1 hover:border-primary hover:shadow-[0_12px_24px_rgba(23,27,44,0.06)] motion-reduce:transition-none motion-reduce:hover:translate-y-0"
         >
             <div>
                 <Tag size="sm">{number}</Tag>

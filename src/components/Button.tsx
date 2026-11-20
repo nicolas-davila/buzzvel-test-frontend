@@ -7,7 +7,7 @@ type ButtonProps = {
     href?: string; 
 };
 
-const baseClasses = "inline-block rounded-lg text-center text-sm leading-6 font-bold transition-colors duration-200 motion-reduce:transition-none";
+const baseClasses = "inline-block rounded-lg text-center text-sm leading-6 font-bold transition duration-200 ease-out hover:-translate-y-0.5 hover:shadow-md active:translate-y-0 active:shadow-none motion-reduce:transition-none motion-reduce:hover:translate-y-0";
 
 const variantClasses = {
     primary: "bg-primary text-white hover:bg-primary/90",

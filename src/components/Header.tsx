@@ -14,11 +14,11 @@ export default function Header() {
                 </Link>
                 <nav aria-label="Main" className="hidden lg:block">
                     <ul className="flex gap-8">
-                        {links.map((link) => <li key={link.label}><a href={link.href} className="text-sm leading-6 text-muted">{link.label}</a></li>)}
+                        {links.map((link) => <li key={link.label}><a href={link.href} className="text-sm leading-6 text-muted transition-colors duration-200 hover:text-foreground motion-reduce:transition-none">{link.label}</a></li>)}
                     </ul>
                 </nav>
                 <div className="hidden items-center justify-self-end gap-2 lg:flex">
-                    <a href="#" className="px-5 py-2.5 text-sm leading-6 text-muted">
+                    <a href="#" className="px-5 py-2.5 text-sm leading-6 text-muted transition-colors duration-200 hover:text-foreground motion-reduce:transition-none">
                         Log in
                     </a>
                     <Button variant="primary" href="#" size="sm">

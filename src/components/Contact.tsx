@@ -46,7 +46,7 @@ export default function Contact() {
                                 <div>
                                     <p className="text-xs leading-4 font-bold">{info.label}</p>
                                     {info.href ? (
-                                        <a href={info.href} className="text-sm leading-6 text-primary">
+                                        <a href={info.href} className="text-sm leading-6 text-primary hover:underline">
                                             {info.detail}
                                         </a>
                                     ) : (

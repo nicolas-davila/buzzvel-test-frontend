@@ -49,12 +49,12 @@ export default function FeaturedCourse() {
                         </Button>
                         <a
                             href={featuredCourse.secondaryHref}
-                            className="inline-flex items-center gap-2 px-4 py-3.5 text-sm leading-6 font-bold"
+                            className="group inline-flex items-center gap-2 px-4 py-3.5 text-sm leading-6 font-bold"
                         >
                             Browse all courses
                             <svg
                                 viewBox="0 0 24 24"
-                                className="size-4"
+                                className="size-4 transition-transform duration-200 group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0"
                                 fill="none"
                                 stroke="currentColor"
                                 strokeWidth="2"
